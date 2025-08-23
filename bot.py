@@ -1782,7 +1782,9 @@ class ModmailBot(commands.Bot):
         while new_name in existed:
             new_name = f"{name}_{counter}"  # multiple channels with same name
             counter += 1
-
+            
+        new_name += "-0"
+        
         return new_name
 
 
